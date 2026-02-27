@@ -1,51 +1,110 @@
 body {
   margin: 0;
-  font-family: Arial, Helvetica, sans-serif;
+  font-family: "Segoe UI", Arial, sans-serif;
   line-height: 1.6;
-  background-color: #f4f4f4;
+  background: linear-gradient(to bottom right, #f5f7fa, #e4e9f2);
+  color: #333;
 }
 
 header {
-  background-color: #002855;
+  background-color: #0a1f44;
   color: white;
-  padding: 20px;
+  padding: 20px 0;
   text-align: center;
   position: fixed;
   top: 0;
   width: 100%;
-  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.2);
+  box-shadow: 0 6px 12px rgba(0, 0, 0, 0.15);
   z-index: 1000;
 }
 
+header h1 {
+  margin: 0;
+  font-size: 28px;
+  letter-spacing: 1px;
+}
+
 nav {
-  margin-top: 10px;
+  margin-top: 12px;
 }
 
 nav a {
   color: white;
   text-decoration: none;
-  margin: 0 15px;
-  font-weight: bold;
-  transition: color 0.3s ease;
+  margin: 0 18px;
+  font-weight: 600;
+  font-size: 15px;
+  position: relative;
+  padding-bottom: 5px;
+  transition: all 0.3s ease;
+}
+
+nav a::after {
+  content: "";
+  position: absolute;
+  left: 0;
+  bottom: 0;
+  width: 0%;
+  height: 2px;
+  background-color: #ffd700;
+  transition: width 0.3s ease;
 }
 
 nav a:hover {
-  color: #ffcc00;
+  color: #ffd700;
+}
+
+nav a:hover::after {
+  width: 100%;
 }
 
 main {
-  margin-top: 140px;
+  margin-top: 160px;
+  min-height: 75vh;
   display: flex;
-  flex-direction: column;
+  justify-content: center;
   align-items: center;
   text-align: center;
-  min-height: 70vh;
-  padding: 20px;
+  padding: 40px 20px;
+}
+
+section {
+  background-color: white;
+  padding: 40px;
+  border-radius: 12px;
+  max-width: 800px;
+  width: 90%;
+  box-shadow: 0 10px 25px rgba(0, 0, 0, 0.08);
+}
+
+h2 {
+  margin-top: 0;
+  color: #0a1f44;
+}
+
+button {
+  background-color: #0a1f44;
+  color: white;
+  border: none;
+  padding: 12px 20px;
+  border-radius: 6px;
+  font-weight: 600;
+  cursor: pointer;
+  transition: all 0.3s ease;
+}
+
+button:hover {
+  background-color: #ffd700;
+  color: #0a1f44;
+  transform: translateY(-2px);
 }
 
 footer {
-  background-color: #002855;
+  background-color: #0a1f44;
   color: white;
   text-align: center;
-  padding: 15px;
+  padding: 18px 0;
+  margin-top: 40px;
+  font-size: 14px;
+  letter-spacing: 0.5px;
 }
