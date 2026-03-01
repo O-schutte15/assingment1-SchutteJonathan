@@ -73,6 +73,15 @@ section ul {
     margin-bottom: 15px;
 }
 
+section img {
+    width: 100%;
+    max-width: 400px;
+    height: auto;
+    display: block;
+    margin: 20px auto;
+    border-radius: 10px;
+}
+
 footer {
     background-color: #0c2340;
     color: white;
@@ -80,6 +89,7 @@ footer {
     padding: 20px;
     margin-top: 40px;
 }
+
 
 
 
